@@ -2,7 +2,7 @@
 EC2에 할당되어 있는 public ip를 EC2 중지없이 제거합니다.
 
 # 2. 설정 확인
-public ip가 제거하고자 하는 ec2 instance 의 network 정보를 확인합니다.
+public ip를 제거하고자 하는 ec2 instance 의 network 정보를 확인합니다.
 1. subnet id : subnet-05d70e9db1821d3d5
 2. public ip : 3.217.80.72
 3. private ip : 172.31.52.58
@@ -15,6 +15,7 @@ EIP 설정 전에도 public ip가 생성되었다면 subnet 에  `Auto-assign pu
 
 
 # 3. public ip 제거
+>*요약 : 추가 네트워크인터페이스를 연결 한 후 EIP를 제거함으로서 함께 기본 public ip도 제거하는 방법입니다.*
 
 
 새로운 네트워크 인터페이스 메뉴를 선택합니다.
